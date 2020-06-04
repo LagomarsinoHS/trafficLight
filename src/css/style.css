@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+
+.numero{
+    display: inline-block;
+    color: white;
+    padding: 18px 27px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+.separador{
+    display: inline-block;
+    color: white;    
+    border-radius: 5px;
+    margin: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+/* Animación con keyframe llamada "latidos" */
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.2); }
+    to { transform: none; }
+}
+/* En la clase corazon vamos a llamar latidos en la animación  */
+.corazon {
+	display: inline-block;
+	font-size: 50px;
+	text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+	color: rgb(145, 28, 28);
+	animation: latidos 1s infinite;
+	transform-origin: center;
+}
